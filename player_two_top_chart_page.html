@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/player_two.css">
+    <link rel="stylesheet" href="media/player_two_media.css">
+</head>
+<body>
+
+    <section id="songs">
+        <div class="container">
+            <!-- top chart part start -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top_header_text">
+                        <h3>Top chart</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-2 pt-4">
+                    <div class="song_card top_chart_one">
+                        <img src="images/player_two_images/top_chart1.webp" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>weekly</p>
+                            <h3>TOP 05</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="justplay()" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 pt-4">
+                    <div class="song_card top_chart_two">
+                        <img src="images/player_two_images/all_bg.webp" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>pop</p>
+                            <h3>TOP 20</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 pt-4">
+                    <div class="song_card top_chart_three">
+                        <img src="images/player_two_images/all_bg.webp" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>rock</p>
+                            <h3>TOP 15</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 pt-4">
+                    <div class="song_card top_chart_four">
+                        <img src="images/player_two_images/all_bg.webp" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>weekly</p>
+                            <h3>TOP 20</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 pt-4">
+                    <div class="song_card top_chart_five">
+                        <img src="images/player_two_images/all_bg.webp" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>uk</p>
+                            <h3>TOP 20</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 pt-4">
+                    <div class="song_card top_chart_six">
+                        <img src="images/player_two_images/all_bg.webp" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>k-pop</p>
+                            <h3>TOP 08</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 pt-4">
+                    <div class="song_card top_chart_seven">
+                        <img src="images/player_two_images/all_bg.webp" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>ghazal</p>
+                            <h3>TOP 20</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2 pt-4">
+                    <div class="song_card top_chart_eight">
+                        <img src="images/player_two_images/all_bg.webp" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>remix</p>
+                            <h3>TOP 10</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- top chart part End -->
+
+        </div>
+    </section>
+    <section id="bottom_bar">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1 pr-0">
+                    <div class="on_track_img text-right">
+                        <img src="" alt="" id="track_image" class="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="on_track_text">
+                        <p id="title">title.mp3</p>
+                        <h4 id="artist">artist name</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="icon_group text-center">
+                        <button onclick="" id="shuffle"><i class="fa fa-random"></i></button>
+                        
+                        <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward"></i></button>
+
+                        <button class="" onclick="bottom_bar_play()" id="bottomBarPlay">
+                            <i class="fa fa-play playbtnStyle"></i>
+                        </button>
+                        
+                        
+                        <button onclick="next_song()" id="next"><i class="fa fa-step-forward"></i></button>
+
+                        <button id="auto" onclick="autoplay_switch()"><i class="fa fa-circle-o-notch" id="autoPlayIcon"></i></button>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="volume text-center">
+                        <!-- i make this problem div start -->
+                        <div id="volume_mute_problem" onclick="mute_sound()" class="">
+                            <i class="fa fa-volume-up" id="volume_icon" onclick=""></i>
+                        </div>
+    
+                        <!-- i make this problem div End -->
+                        
+                        <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="duration">
+            <input type="range" min="0" max="100" value="0" onchange="change_duration()" id="duration_slider">
+        </div>
+        
+    </section>
+
+    
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Font-Awesome.js"></script>
+    <script src="js/player_two.js"></script>
+</body>
+</html>

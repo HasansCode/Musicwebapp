@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="media/media.css">
+</head>
+<body>
+
+    <section id="player_two">
+        <div class="main">
+            <p id="logo"><i class="fa fa-music"></i></p>
+            <!-- left part start -->
+            <div class="left">
+                <!-- <img src="" alt="" id="track_image"> -->
+                <!-- <div class="volume">
+                    <p id="volume_show">90</p>
+                    
+                    
+                    <div id="volume_mute_problem" onclick="mute_sound()">
+                        <i class="fa fa-volume-up" id="volume_icon" onclick=""></i>
+                    </div>
+
+                    
+                    
+                    <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+                </div> -->
+            </div>
+            <!-- left part End -->
+
+            <!-- right part start -->
+            <div class="right">
+                <div class="show_song_no">
+                    <p id="present">1</p>
+                    <p></p>
+                    <p id="total">5</p>
+                </div>
+
+                <!-- <p id="title">title.mp3</p> -->
+                <!-- <p id="artist">artist name</p> -->
+
+                <div class="middle">
+                    <!-- <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward"></i></button> -->
+
+
+                    <!-- <button onclick="justplay()" id="play"><i class="fa fa-play"></i></button> -->
+
+                    <!-- <button onclick="next_song()" id="next"><i class="fa fa-step-forward"></i></button> -->
+                </div>
+
+
+
+
+                <!-- <div class="duration">
+                    <input type="range" min="0" max="100" value="0" onchange="change_duration()" id="duration_slider">
+                </div> -->
+
+                <!-- <button id="auto" onclick="autoplay_switch()">Auto play <i class="fa fa-circle-o-notch"></i></button> -->
+
+
+            </div>
+            <!-- right part End -->
+        </div>
+    </section>
+
+<!--============================== header part start=========================== -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="images/player_two_images/logo.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Podcast</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Download app</a>
+        </li>
+       
+      </ul>
+      
+    </div>
+    </div>
+</nav>
+<!--============================== header part End=========================== -->
+
+
+
+
+
+
+
+<!--======================== banner part start================ -->
+<section id="banner">
+    <div class="banner_slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner_image">
+                        <img src="images/player_two_images/banner1.webp" alt="" class="img-fluid w-100">
+                        <div class="banner_image_overly">
+                            <div class="banner_play" onclick="" id="">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner_image">
+                        <img src="images/player_two_images/banner2.webp" alt="" class="img-fluid w-100">
+                        <div class="banner_image_overly">
+                            <div class="banner_play" onclick="" id="">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner_image">
+                        <img src="images/player_two_images/banner3.webp" alt="" class="img-fluid w-100">
+                        <div class="banner_image_overly">
+                            <div class="banner_play" onclick="" id="">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner_image">
+                        <img src="images/player_two_images/banner4.webp" alt="" class="img-fluid w-100">
+                        <div class="banner_image_overly">
+                            <div class="banner_play" onclick="" id="">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner_image">
+                        <img src="images/player_two_images/banner3.webp" alt="" class="img-fluid w-100">
+                        <div class="banner_image_overly">
+                            <div class="banner_play" onclick="" id="">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner_image">
+                        <img src="images/player_two_images/banner4.webp" alt="" class="img-fluid w-100">
+                        <div class="banner_image_overly">
+                            <div class="banner_play" onclick="" id="">
+                                <i class="fa fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+<!--======================== banner part End================ -->
+
+    <section id="songs">
+        <div class="container">
+            <!-- top chart part start -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top_header_text">
+                        <h3>Top chart</h3>
+                        <a href="player_two_top_chart_page.html">more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4 top_chart_slider">
+                <div class="col-lg-2">
+                    <div class="song_card top_chart_one">
+                        <img src="images/player_two_images/top_chart1.webp" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>weekly</p>
+                            <h3>TOP 05</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="justplay()" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2">
+                    <div class="song_card top_chart_two">
+                        <img src="images/player_two_images/top_chart2.jpg" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>pop</p>
+                            <h3>TOP 20</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="nextSong()" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2">
+                    <div class="song_card top_chart_three">
+                        <img src="images/player_two_images/top_chart3.jpg" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>rock</p>
+                            <h3>TOP 15</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2">
+                    <div class="song_card top_chart_four">
+                        <img src="images/player_two_images/top_chart4.jpg" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>weekly</p>
+                            <h3>TOP 20</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="song_card top_chart_five">
+                        <img src="images/player_two_images/top_chart5.jpg" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>uk</p>
+                            <h3>TOP 20</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="song_card top_chart_six">
+                        <img src="images/player_two_images/top_chart6.jpg" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>k-pop</p>
+                            <h3>TOP 08</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2">
+                    <div class="song_card top_chart_seven">
+                        <img src="images/player_two_images/top_chart7.jpg" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>ghazal</p>
+                            <h3>TOP 20</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-2">
+                    <div class="song_card top_chart_eight">
+                        <img src="images/player_two_images/top_chart8.jpg" alt="" class="img-fluid w-100">
+                        <div class="top_song_card_text text-center">
+                            <p>remix</p>
+                            <h3>TOP 10</h3>
+                        </div>
+                        <div class="all_play_icon" onclick="" id="play">
+                            <i class="fa fa-play"></i>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- top chart part End -->
+
+        </div>
+    </section>
+    <!--======================= international hip hop part start===================== -->
+    <section id="international_hip_hop">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="top_header_text pl-4 pt-2">
+                        <h3>International Top Hits</h3>
+                        <a href="#">more</a>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-4 top_chart_slider">
+
+
+                <div class="col-lg-2 pr-0 pl-0">
+                    <div class="single_track_card">
+                        <div class="image">
+                            <img src="images/player_two_images/international_hip_hop_single_track.webp" alt="" class="img-fluid w-100">
+                            <div class="single_track_card_overly">
+                                <div class="single_track_play" onclick="" id="">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_track_card_text">
+                            <h3>closer</h3>
+                            <p>the chainsmokers</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-2 pr-0 pl-0">
+                    <div class="single_track_card">
+                        <div class="image">
+                            <img src="images/player_two_images/international_hip_hop_single_track2.webp" alt="" class="img-fluid w-100">
+                            <div class="single_track_card_overly">
+                                <div class="single_track_play" onclick="" id="">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_track_card_text">
+                            <h3>closer</h3>
+                            <p>the chainsmokers</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-2 pr-0 pl-0">
+                    <div class="single_track_card">
+                        <div class="image">
+                            <img src="images/player_two_images/slingle_track3.webp" alt="" class="img-fluid w-100">
+                            <div class="single_track_card_overly">
+                                <div class="single_track_play" onclick="" id="">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_track_card_text">
+                            <h3>closer</h3>
+                            <p>the chainsmokers</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-2 pr-0 pl-0">
+                    <div class="single_track_card">
+                        <div class="image">
+                            <img src="images/player_two_images/single_track4.webp" alt="" class="img-fluid w-100">
+                            <div class="single_track_card_overly">
+                                <div class="single_track_play" onclick="" id="">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_track_card_text">
+                            <h3>closer</h3>
+                            <p>the chainsmokers</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-2 pr-0 pl-0">
+                    <div class="single_track_card">
+                        <div class="image">
+                            <img src="images/player_two_images/single_track5.webp" alt="" class="img-fluid w-100">
+                            <div class="single_track_card_overly">
+                                <div class="single_track_play" onclick="" id="">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_track_card_text">
+                            <h3>closer</h3>
+                            <p>the chainsmokers</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-2 pr-0 pl-0">
+                    <div class="single_track_card">
+                        <div class="image">
+                            <img src="images/player_two_images/single_track6.webp" alt="" class="img-fluid w-100">
+                            <div class="single_track_card_overly">
+                                <div class="single_track_play" onclick="" id="">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_track_card_text">
+                            <h3>closer</h3>
+                            <p>the chainsmokers</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-2 pr-0 pl-0">
+                    <div class="single_track_card">
+                        <div class="image">
+                            <img src="images/player_two_images/single_track7.webp" alt="" class="img-fluid w-100">
+                            <div class="single_track_card_overly">
+                                <div class="single_track_play" onclick="" id="">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_track_card_text">
+                            <h3>closer</h3>
+                            <p>the chainsmokers</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-2 pr-0 pl-0">
+                    <div class="single_track_card">
+                        <div class="image">
+                            <img src="images/player_two_images/single_track8.webp" alt="" class="img-fluid w-100">
+                            <div class="single_track_card_overly">
+                                <div class="single_track_play" onclick="" id="">
+                                    <i class="fa fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single_track_card_text pl-2">
+                            <h3>closer</h3>
+                            <p>the chainsmokers</p>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!--====================== international hip hop part End========================= -->
+    <!--===================== footer part start================ -->
+    <section id="footer">
+        <div class="col-lg-4 m-auto">
+            <div class="footer_item text-center">
+                <div class="footer_image m-auto"></div>
+                <a href="#">Hire Me</a>
+            </div>
+        </div>
+    </section>
+    <!--===================== footer part End================ -->
+
+    <section id="bottom_bar">
+        
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1 pr-0">
+                    <div class="on_track_img text-right">
+                        <img src="" alt="" id="track_image" class="">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="on_track_text">
+                        <p id="title">title.mp3</p>
+                        <h4 id="artist">artist name</h4>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="icon_group text-center">
+                        <button onclick="" id="shuffle"><i class="fa fa-random"></i></button>
+                        
+                        <button onclick="previous_song()" id="pre"><i class="fa fa-step-backward"></i></button>
+
+                        <button class="" onclick="bottom_bar_play()" id="bottomBarPlay">
+                            <i class="fa fa-play playbtnStyle"></i>
+                        </button>
+                        
+                        
+                        <button onclick="next_song()" id="next"><i class="fa fa-step-forward"></i></button>
+
+                        <button id="auto" onclick="autoplay_switch()"><i class="fa fa-circle-o-notch" id="autoPlayIcon"></i></button>
+
+
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="volume text-center">
+                        <!-- i make this problem div start -->
+                        <div id="volume_mute_problem" onclick="mute_sound()" class="">
+                            <i class="fa fa-volume-up" id="volume_icon" onclick=""></i>
+                        </div>
+    
+                        <!-- i make this problem div End -->
+                        
+                        <input type="range" min="0" max="100" value="90" onchange="volume_change()" id="volume">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="duration">
+            <input type="range" min="0" max="100" value="0" onchange="change_duration()" id="duration_slider">
+        </div>
+        
+    </section>
+
+
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/Font-Awesome.js"></script>
+    <script src="js/custom.js"></script>
+</body>

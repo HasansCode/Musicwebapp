@@ -1,0 +1,504 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    line-height: 0.9;
+    color: #fff;
+}
+a,a:hover{
+    text-decoration: none;
+    display: inline-block;
+    /* color: #000; */
+}
+ul,ol{
+    list-style-type: none;
+}
+/* font-family: 'IBM Plex Sans', sans-serif; */
+/* common css ENd */
+body{
+
+    overflow-x: hidden;
+    background: #000;
+
+}
+
+/* #player_two{
+    height: 100vh;
+    z-index: 999;
+    background: #000;
+} */
+
+#player_two{
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+
+
+
+
+/* buttom_bar part start */
+#bottom_bar{
+    position: fixed;
+    bottom: 40px;
+    width: 100%;
+    height: 80px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+.on_track_img img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.on_track_text{
+    padding-top: 10px;
+}
+.on_track_text p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: #f7f5f5;
+    text-transform: capitalize;
+}
+.on_track_text h4{
+    color: #818c94;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.icon_group button{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    outline: none;
+}
+.icon_group button i{
+    color: #fff;
+    font-size: 20px;
+}
+
+.icon_group .playbtnStyle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: #f61818;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    color: #000;
+}
+.icon_group #auto{
+    padding-left: 30px;
+}
+.icon_group #pre{
+    padding-right: 20px;
+}
+.icon_group #next{
+    padding-left: 20px;
+}
+.icon_group #shuffle{
+    padding-right: 30px;
+}
+
+
+.volume{
+    position: relative;
+}
+
+.volume #volume {
+	width: 100px;
+	position: absolute;
+	left: 175px;
+	top: -60px;
+	transform: rotate(270deg);
+	-webkit-transform: rotate(270deg);
+	-moz-transform: rotate(270deg);
+	-ms-transform: rotate(270deg);
+	-o-transform: rotate(270deg);
+	border: transparent;
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+}
+.volume:hover #volume{
+    visibility: visible;
+    opacity: 1;
+    display: inline-block;
+}
+
+
+
+
+
+.duration input{
+    width: 100%;
+}
+/* bottom_bar part End */
+
+#banner{
+    padding-top: 80px;
+}
+.banner_image{
+    position: relative;
+}
+.banner_image img{
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.navbar-nav{
+    margin-left: 30px;
+    /* # */
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+	text-transform: uppercase;
+    margin-left: 15px;
+    color: #f7f5f5;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+.navbar{
+    background: #21252D;
+}
+.banner_image_overly{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+    visibility: hidden;
+    opacity: 0;
+
+}
+.banner_play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    text-align: center;
+    line-height: 40px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    cursor: pointer;
+}
+.banner_play i{
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    color: transparent;
+}
+.banner_image:hover .banner_image_overly{
+    visibility: visible;
+    opacity: 1;
+}
+.banner_image:hover .banner_play{
+    background: #e2f113;
+}
+.banner_image:hover .banner_play i{
+    color: #f02626;
+}
+/* .banner_play:hover{
+    font-size: 34px;
+} */
+/*============== top chart part start============= */
+
+
+#songs{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+
+
+/* header text */
+.top_header_text{
+    display: flex;
+    justify-content: space-between;
+}
+.top_header_text h3{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: capitalize;
+}
+
+
+
+/* card part start */
+
+
+.song_card{
+    padding: 10px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+}
+.song_card img{
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.top_song_card_text p{
+    line-height: 0;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+}
+.top_song_card_text h3{
+    line-height: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #fff;
+}
+.all_play_icon{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    text-align: center;
+    line-height: 40px;
+    
+}
+.all_play_icon i{
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    color: transparent;
+}
+.song_card:hover .all_play_icon{
+    background: #e2f113;
+}
+.song_card:hover .all_play_icon i{
+    color: #fff;
+}
+/* top chart color group start */
+.top_chart_one{
+    background: #FE3B99;
+}
+.top_chart_two{
+    background: #06E9B8;
+}
+.top_chart_three{
+    background: #15ADF9;
+}
+.top_chart_four{
+    background: #FE5A21;
+}
+.top_chart_five{
+    background: #80CA36;
+}
+.top_chart_six{
+    background: #DD1DC7;
+}
+.top_chart_seven{
+    background: #9D4BFF;
+}
+.top_chart_eight{
+    background: #FF2364;
+}
+/* top chart color group End */
+
+/*============ top chart part End =================*/
+
+/* ======================= international hip hop part start===================== */
+.single_track_card_text h3{
+    padding-top: 5px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #f5f5f5;
+    text-transform: capitalize;
+}
+.single_track_card_text p{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: #f5f5f5;
+    text-transform: capitalize;
+}
+.single_track_card .image{
+    position: relative;
+}
+.single_track_card_overly{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+/* .single_track_play{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    text-align: center;
+    line-height: 40px;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    cursor: pointer;
+} */
+
+
+.all_play_icon{
+    
+    
+}
+.single_track_play i{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    cursor: pointer;
+    transition: .6s;
+    -webkit-transition: .6s;
+    -moz-transition: .6s;
+    -ms-transition: .6s;
+    -o-transition: .6s;
+    color: transparent;
+}
+.single_track_card:hover .single_track_card_overly{
+    visibility: visible;
+    opacity: 1;
+}
+.single_track_card:hover .single_track_play{
+    background: transparent;
+}
+.single_track_card:hover .single_track_play i{
+    color: #0bff30;
+    font-size: 60px;
+}
+/* .single_track_play:hover{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+} */
+.single_track_card_text{
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+}
+.single_track_card{
+    margin-bottom: 20px;
+    /* -webkit-box-shadow: 0px 18px 9px 0px rgba(255,21,58,0.65);  */
+box-shadow: 0px 8px 15px 0px rgba(66, 66, 66, 0.65);
+}
+/* ======================= international hip hop part End===================== */
+#footer{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.footer_image{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background: url(../images/player_two_images/footer_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+.footer_item a{
+    padding: 10px 16px;
+    background: #ea4c89;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    color: #f5f5f5;
+    margin-top: 40px;
+
+}
+/* # */
